@@ -1,0 +1,118 @@
+/*********************************************************
+*				Background Colors
+*********************************************************/
+.backHeader {
+	background-color: #FFB280;
+}
+
+body {
+	background-color: #CCB299;
+}
+
+
+/**********************************************************
+*					Navigation Bar
+**********************************************************/
+
+.nav ul {
+
+	/* basics */
+  	background-color: #FFB280;
+  	text-align: center;
+  	padding: 0;
+  	margin-top: 0;
+  	margin-left: 5%;
+}
+
+.nav li {
+	/* basic set up of blocks */
+	display: inline-block;
+	float: left;
+
+  	/* create the boxes */
+    border: solid;
+    border-color: #FF9F40;
+  	margin-left: 0;
+ 	margin-right: 0;
+ 	margin-top: 0;
+  	width: 18.5%;
+
+	/* specifics for elements inside */
+	font-family: 'oswald', sans-serif;
+	text-align: center;
+}
+
+.nav a{
+
+	/* Font */
+	text-decoration: none;
+	color: #A65200;
+	font-weight: bold;
+	letter-spacing: 1px;
+
+	/* make the whole block the link */
+	display: block;
+	background-color: #FFB873;
+	padding-top: 15px;
+  	padding-bottom: 15px;
+}
+
+ /* user action */
+.nav a:hover {
+	color: #FFB280;
+	background-color: #A65200;
+}
+
+
+/********************************************************
+*				Main body 
+********************************************************/
+.leftMain {
+
+	/* basics */
+	float: left;
+	width: 60%;
+
+	/* space from other objects */
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-right: 1%;
+	margin-bottom: 5%;
+
+	/* pad it out */
+	padding: 30px 20px 20px 20px;
+
+	/* decoration */
+	background-color: white;
+	border: 1px solid #FF7F00;
+}
+
+.rightMain {
+
+	/* basics */
+	float: right;
+	width: 15%;
+
+	/* give it some space */
+	margin-left: 10px;
+	margin-right: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+	/* pad it out */
+	padding: 30px 20px 20px 20px;
+
+	/* deocration */
+	background-color: white;
+	border: 1px solid #FF9F40;
+}
+
+
+/*******************************************************
+*			Text Types
+********************************************************/
+h2{
+	color: #FF9F40;
+	font-family: 'oswald', sans-serif;
+	text-decoration: underline;
+}
