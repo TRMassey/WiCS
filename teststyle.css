@@ -3,10 +3,19 @@
 *********************************************************/
 .backHeader {
 	background-color: #FFB280;
+	height: 30%;
+	padding: none;
+	border-bottom: 1px solid #bc5200;
 }
 
 body {
-	background-color: #CCB299;
+	background-color: #ffe4d0;
+	margin: 0;	/* close that gap between div and window margin*/
+}
+
+.header {
+	background-color: #ff8c33;
+	overflow: hidden;
 }
 
 
@@ -15,54 +24,77 @@ body {
 **********************************************************/
 
 .nav ul {
-
 	/* basics */
   	background-color: #FFB280;
   	text-align: center;
   	padding: 0;
   	margin-top: 0;
-  	margin-left: 5%;
+
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, #FFB380),
+	color-stop(1, #FF8B33)
+	);
+	background-image: -o-linear-gradient(top, #FFB380 0%, #FF8B33 100%);
+	background-image: -moz-linear-gradient(top, #FFB380 0%, #FF8B33 100%);
+	background-image: -webkit-linear-gradient(top, #FFB380 0%, #FF8B33 100%);
+	background-image: -ms-linear-gradient(top, #FFB380 0%, #FF8B33 100%);
+	background-image: linear-gradient(to top, #FFB380 0%, #FF8B33 100%);
 }
 
 .nav li {
 	/* basic set up of blocks */
 	display: inline-block;
-	float: left;
-
-  	/* create the boxes */
-    border: solid;
-    border-color: #FF9F40;
-  	margin-left: 0;
- 	margin-right: 0;
- 	margin-top: 0;
-  	width: 18.5%;
+	list-style: none;
+	padding-top: 2%;
 
 	/* specifics for elements inside */
 	font-family: 'oswald', sans-serif;
 	text-align: center;
+
+
 }
 
 .nav a{
-
-	/* Font */
-	text-decoration: none;
-	color: #A65200;
-	font-weight: bold;
-	letter-spacing: 1px;
-
-	/* make the whole block the link */
-	display: block;
-	background-color: #FFB873;
-	padding-top: 15px;
-  	padding-bottom: 15px;
+  	display: block;
+    text-align: center;
+    height: 50px;
+    width: 140px;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 5px;		/* rounded button */
+           
+    text-decoration: none;
+    text-shadow: 0 1px 0 #6e3000;
+     
+    border-right: 1px solid #d05b00;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+           
+    background-image: -moz-linear-gradient(top, #ff760c, #ff8c33);
+    background-image: -ms-linear-gradient(top, #ff760c, #ff8c33);
+    background-image: -webkit-linear-gradient(top, #ff760c, #ff8c33);
+    background-image: linear-gradient(top, #ff760c, #ff8c33);
+           
+    -webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #d05b00;
+    -moz-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #d05b00;
+    box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #d05b00;
 }
 
  /* user action */
 .nav a:hover {
-	color: #FFB280;
-	background-color: #A65200;
+	background-image: -moz-linear-gradient(top, #a94a00, #e46300);
+    background-image: -ms-linear-gradient(top, #a94a00, #e46300);
+    background-image: -webkit-linear-gradient(top, #a94a00, #e46300);
+    background-image: linear-gradient(top, #a94a00, #e46300);
 }
 
+/* buttons with longer text need extra padding */
+#longer {
+	padding-left: 3px;
+	padding-right: 3px;
+}
 
 /********************************************************
 *				Main body 
@@ -102,7 +134,7 @@ body {
 	/* pad it out */
 	padding: 30px 20px 20px 20px;
 
-	/* deocration */
+	/* decoration */
 	background-color: white;
 	border: 1px solid #FF9F40;
 }
