@@ -1,0 +1,270 @@
+/*********************************************************
+*				Background Colors
+**********************************************************/
+
+/* creates gradient fade from the nav bar down */
+.topHalf {
+	margin-top: 5%;
+  	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, #FFB380),
+	color-stop(1, #FF8B33)
+	);
+	background-image: -o-linear-gradient(top, #ffe4d0 0%, #FF8B33 100%);
+	background-image: -moz-linear-gradient(top, #ffe4d0 0%, #FF8B33 100%);
+	background-image: -webkit-linear-gradient(top, #ffe4d0 0%, #FF8B33 100%);
+	background-image: -ms-linear-gradient(top, #ffe4d0 0%, #FF8B33 100%);
+	background-image: linear-gradient(to top, #ffe4d0 0%, #FF8B33 100%);
+}
+
+/* fades to this color, for behind main body columns */
+body {
+	background-color: #ffe4d0;
+	margin: 0;	/* close that gap between div and window margin*/
+}
+
+
+
+
+/*****************************************************************
+*					Images
+******************************************************************/
+
+img {
+	border: 5px solid #804C00;
+}
+
+/* light orange bar that fades, adds whitespace */
+hr {
+	color: #FF8B33;
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 15px -10px inset;
+	width: 90%;
+}
+
+
+/**********************************************************
+*					Navigation Bar
+**********************************************************/
+.nav ul {
+
+	/* basics */
+	float: right;
+  	text-align: center;
+  	padding: 0;
+  	margin-top: 0;
+  	margin-bottom: 0;
+  	margin-right: 5%;
+
+}
+
+
+.nav li {
+	/* basic set up of blocks */
+	display: inline-block;
+	list-style: none;
+	padding-top: 2%;
+
+	/* specifics for elements inside */
+	font-family: 'oswald', sans-serif;
+	text-align: center;
+}
+
+.nav a{
+
+	/* shape the boxes */
+  	display: block;
+    text-align: center;
+    height: 50px;
+    width: 140px;
+    line-height: 50px;
+    color: #804C00;
+    border-radius: 5px;		/* rounded button */
+    
+	/* decorate and border */       
+    text-decoration: none;
+    text-shadow: 0 1px 0 #6e3000;
+     
+    border-right: 1px solid #d05b00;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #ffe4d0;
+
+    /* fill */
+    background-image: -moz-linear-gradient(top, #ffe4d0, #ff8c33);
+    background-image: -ms-linear-gradient(top, #ffe4d0, #ff8c33);
+    background-image: -webkit-linear-gradient(top, #ffe4d0, #ff8c33);
+    background-image: linear-gradient(top, #ffe4d0, #ff8c33);
+           
+    -webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #d05b00;
+    -moz-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #d05b00;
+    box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #d05b00;
+}
+
+ /* user action */
+.nav a:hover {
+	color: #fff;
+	background-image: -moz-linear-gradient(top, #a94a00, #e46300);
+    background-image: -ms-linear-gradient(top, #a94a00, #e46300);
+    background-image: -webkit-linear-gradient(top, #a94a00, #e46300);
+    background-image: linear-gradient(top, #a94a00, #e46300);
+}
+
+/* buttons with longer text need extra padding */
+#longer {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+/* take the  nav bar, and keep it in a fixed location despite scrolling */
+.nav {
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+  	background-color: #FF8B33;
+}
+
+
+
+/********************************************************
+*				Main body 
+********************************************************/
+.leftMain {
+
+	/* basics */
+	float: left;
+	width: 60%;
+
+	/* space from other objects */
+	margin-left: 5%;
+	margin-top: 1%;
+	margin-right: 1%;
+	margin-bottom: 5%;
+
+	/* pad it out */
+	padding: 30px 20px 20px 20px;
+
+	/* decoration */
+	background-color: white;
+	border: 5px solid #FF7F00;
+	border-radius: 5px;
+}
+
+.rightMain {
+
+	/* basics */
+	float: right;
+	width: 20%;
+	height: 50%;
+	color: white;
+
+	/* give it some space */
+	margin-left: 10px;
+	margin-right: 5%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+
+	/* pad it out */
+	padding: 30px 20px 20px 20px;
+
+	/* decoration */
+	background-color: #D68330;
+	border: 1px solid #D68330;
+	border-radius: 5px;
+}
+
+.rightMainSecond {
+
+	/* basics */
+	float: right;
+	width: 20%;
+	height: 50%;
+	color: white;
+
+	/* give it some space */
+	margin-left: 10px;
+	margin-right: 5%;
+	margin-top: 1%;
+	margin-bottom: 5%;
+
+	/* pad it out */
+	padding: 30px 20px 20px 20px;
+
+	/* decoration */
+	background-color: #FF8B33;
+	border: 1px solid #FF8B33;
+	border-radius: 5px;
+}
+
+
+/******************************************************
+*			Panel
+*******************************************************/
+.panel{
+	padding: 5px;
+	background-color: #FF8B33;
+	border: solid 1px #FF8B33;
+}
+
+.flip {
+	padding: 5px;
+	text-align: center;
+	background-color: #FF8B33;
+	border: solid 1px #FF8B33;
+}
+
+.panel {
+	padding: 50px;
+	display: none;
+}
+
+/* lower right */
+.panel2{
+	padding: 5px;
+	background-color: #D68330;
+	border: solid 1px #D68330;
+}
+
+.flip2 {
+	padding: 5px;
+	text-align: center;
+	background-color: #D68330;
+	border: solid 1px #D68330;
+}
+
+.panel2 {
+	padding: 50px;
+	display: none;
+}
+/*******************************************************
+*			Text Types
+********************************************************/
+/* Header, Oregon State */
+h1{
+	float: left;
+	margin-left: 5%;
+	color: #804C00;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+/* Headings in the columns */
+h2{
+	color: #804C00;
+	font-family: 'Titillium Web', sans-serif;
+	text-decoration: underline;
+}
+
+/* Dark column gets a whte heading */
+.rightMain > h2{
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+	text-decoration: underline;
+}
+
+
+h4{
+	color: #804C00;
+}

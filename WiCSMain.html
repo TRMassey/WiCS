@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">    
+    <title>Home</title>
+    <link rel="stylesheet" href="teststyle.css" />
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+    <!-- Fixed Navigation Bar w/logo and nav keys -->
+    <div class="nav" align ="right">
+      <h1>Oregon State University</h1>
+        <ul id="menu">
+          <li><a href="main.php">Home Page</a></li>
+          <li><a href="about.php">About WiCS</a></li>
+          <li><a href="resources.php" id="longer">Student Resources</a></li>
+          <li><a href="career.php" id="longer">Career Resources</a></li>
+          <li><a href="contact.php">Contact</a></li>
+      </div>
+
+    <!-- Fade from orange to pink behind main page picture, below nav bar -->
+      <div class="topHalf" align="left">
+        </br> <!-- on my computer, this fixes the overlap issues between moz/ie/chrome and the floating nav bar -->
+        
+        <!-- Our name will go here.. ignore the current picture -->
+        <div class="header" align="center">
+          <img alt="mainPic" width="90%" src="http://i58.tinypic.com/x4m01.png">
+            <!-- give some extra padding with some background that is the samem color gradient fades to -->
+            </br>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Left "main body of text" column for us to write in for the section -->
+      <div class="leftMain">
+        <h2>Header One</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nec leo quis scelerisque. Phasellus gravida leo nec ullamcorper venenatis. Sed at auctor tortor. Donec malesuada mauris elit, ac volutpat massa placerat aliquet. Ut justo arcu, sollicitudin nec laoreet eget, mollis in risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Aliquam fringilla tortor ut nisl rhoncus gravida. Quisque fermentum mi maximus viverra ornare.
+
+          <p>Pellentesque leo metus, egestas in vehicula quis, volutpat vitae dolor. Duis scelerisque pharetra augue, at dignissim nisl molestie non. Pellentesque vehicula massa ut nisl dapibus tristique. Aenean vestibulum, dui vel gravida sodales, neque magna porta nisl, eu sodales elit sapien non sem. Phasellus eu mauris sed lacus commodo vestibulum id vel eros. Integer volutpat vulputate tempus. Etiam mattis nunc a nisi bibendum rhoncus. Maecenas pellentesque mi vitae lectus ullamcorper facilisis. Integer sit amet nunc tellus. Vivamus et odio fringilla, mattis purus ac, ullamcorper elit. Donec auctor, diam a efficitur ullamcorper, risus erat tristique sapien, ac consequat arcu tellus nec quam. Fusce volutpat fringilla lorem ut sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum mattis varius. Praesent ac lectus sed augue tristique dignissim. Duis egestas ornare faucibus.
+
+          <p>Praesent tristique bibendum diam eget condimentum. Nulla vel dui a erat vehicula consequat non at nisl. Ut urna tellus, blandit ut nisl sed, vulputate tristique orci. Quisque iaculis dui sit amet justo semper, eu laoreet justo vulputate. In sit amet sagittis odio. Praesent rhoncus velit quis iaculis ornare. Maecenas et dictum purus, et placerat nibh. Integer ultricies felis sit amet nibh aliquam, posuere pretium risus convallis. Integer fermentum luctus posuere.
+
+          <p>Quisque finibus, nulla vitae varius consectetur, libero est interdum nulla, vitae sollicitudin lacus ligula quis massa. Nam est quam, vestibulum in ligula nec, posuere facilisis tortor. Vivamus quis eros hendrerit, consectetur mi ac, venenatis eros. Proin dignissim faucibus ante, at vehicula est convallis at. Etiam vel enim tortor. Cras varius eget massa eget bibendum. Nunc nisl dolor, congue ac pellentesque at, convallis ut est. Nulla facilisi.
+
+          <p>Nam molestie, nisi non dictum semper, justo mauris fringilla diam, eu porttitor est odio quis est. Donec faucibus condimentum velit, ac imperdiet nunc. Aliquam vel ante blandit, aliquet lorem sed, scelerisque magna. Nullam posuere tempor mauris, ut pellentesque elit ornare nec. Sed sagittis elementum urna, ut finibus turpis lacinia vitae. Morbi non tortor vel enim dapibus laoreet. Integer eleifend metus nulla, at pretium lorem tempus nec. Etiam fringilla fermentum quam ut porttitor. Sed eget enim blandit, ultrices lectus et, auctor ipsum.
+        </p>
+      </div>
+
+      <!-- Secondary body of text, less in width because logo is on right too, trying to keep visual weight -->
+      <div class="rightMain">
+        <h2>Header Two</h2>
+        <p>
+          Stuff goes here too!
+          yay! I'm typing stuff..
+                    Stuff goes here too!
+          yay! I'm typing stuff..
+                    Stuff goes here too!
+          yay! I'm typing stuff..
+
+          <!-- Images not needed, but would be ideal for these small "highlight" columns. Example pic -->
+          <img width="70%" src="http://i60.tinypic.com/293hgeo.jpg">
+          And maybe some images and pretty things highlighting who we are and what we do...
+        </p>
+  
+        <!-- "More Information" dropdown/slideup. Used for longer articles than side boxes can show, links, etc -->
+        <div class="flip">Read More...</div>
+        <div class="panel">More stuff will go here as needed</div>
+      </div>
+
+      <!-- Third block of text for highlighting sujects -->
+      <div class="rightMainSecond">
+        <h2>Header Two</h2>
+        <p>
+          Stuff goes here too!
+          yay! I'm typing stuff..
+                    Stuff goes here too!
+          yay! I'm typing stuff..
+        </p>
+        <div class="flip2">Read More...</div>
+        <div class="panel2">More stuff will go here as needed</div>
+      </div>
+</body>
+</html>
