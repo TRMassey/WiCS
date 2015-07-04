@@ -209,18 +209,20 @@ h1{
 	float: left;
 	margin-left: 5%;
 	color: #804C00;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 /* Headings in the columns */
 h2{
 	color: #804C00;
-	font-family: 'oswald', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	text-decoration: underline;
 }
 
 /* Dark column gets a whte heading */
 .rightMain > h2{
 	color: white;
+	font-family: 'Titillium Web', sans-serif;
 	text-decoration: underline;
 }
 
