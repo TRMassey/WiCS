@@ -13,7 +13,12 @@ function findNews() {
 	}
 
 	else {
+		// write the opening bracket for valid json format
+		var file = 'data.json';
 
+		fs.writeFileSync(file, '[');
+
+		// loop through the object, search for valid data, write it to the output file
 		for (var i = 0; i < links.length; ++i) {
 			var article = {
 				title: links[i].title,
@@ -23,11 +28,24 @@ function findNews() {
 
 			// don't send data that has null values
 			if (links[i].link !== null && links[i].description !== '') {
-				data.push(article);
+				// hacky way of making sure json formatting is valid
+				// when it reaches the last position, calls the noComma function and doesn't add an invalid comma
+				if (i !== (links.length - 1)) {
+					data.push(article);
 
-				writeFile(article);
+					writeFile(article);
+				}
+				else {
+					data.push(article);
+
+					noComma(article);
+				}
 			}
 		}
+
+		// add closing bracket for json object
+		fs.appendFileSync(file, ']');
+
 		// nonop right now, this can be adjusted to gather more than 10 results max
 		if (nextCounter < 0) {
 			nextCounter += 1;
@@ -42,6 +60,13 @@ function findNews() {
 
 
 function writeFile(article) {
+	var file = 'data.json';
+
+	fs.appendFileSync(file, JSON.stringify(article) + ',');
+
+}
+
+function noComma(article) {
 	var file = 'data.json';
 
 	fs.appendFileSync(file, JSON.stringify(article));
