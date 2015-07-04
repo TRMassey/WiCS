@@ -36,7 +36,14 @@ img {
 	border: 5px solid #804C00;
 }
 
-
+/* light orange bar that fades, adds whitespace */
+hr {
+	color: #FF8B33;
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 15px -10px inset;
+	width: 90%;
+}
 
 
 /**********************************************************
