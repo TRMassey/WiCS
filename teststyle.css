@@ -221,6 +221,24 @@ hr {
 	display: none;
 }
 
+/* lower right */
+.panel2{
+	padding: 5px;
+	background-color: #D68330;
+	border: solid 1px #D68330;
+}
+
+.flip2 {
+	padding: 5px;
+	text-align: center;
+	background-color: #D68330;
+	border: solid 1px #D68330;
+}
+
+.panel2 {
+	padding: 50px;
+	display: none;
+}
 /*******************************************************
 *			Text Types
 ********************************************************/
