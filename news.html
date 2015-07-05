@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">    
+    <title>In The News</title>
+    <link rel="stylesheet" href="teststyle.css" />
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+    <!-- Fixed Navigation Bar w/logo and nav keys -->
+    <div class="nav" align ="right">
+      <h1>Oregon State University</h1>
+        <ul id="menu">
+          <li><a href="main.php">Home Page</a></li>
+          <li><a href="about.php">About WiCS</a></li>
+          <li><a href="resources.php" id="longer">Student Resources</a></li>
+          <li><a href="career.php" id="longer">Career Resources</a></li>
+          <li><a href="contact.php">Contact</a></li>
+      </div>
+
+    <!-- Fade from orange to pink behind main page picture, below nav bar -->
+      <div class="topHalf" align="left">
+        </br> <!-- on my computer, this fixes the overlap issues between moz/ie/chrome and the floating nav bar -->
+        
+        <!-- Our name will go here.. ignore the current picture -->
+        <div class="header" align="center">
+          <img alt="mainPic" width="90%" src="http://i58.tinypic.com/x4m01.png">
+            <!-- give some extra padding with some background that is the samem color gradient fades to -->
+            </br>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Left "main body of text" column for us to write in for the section -->
+      <div class="leftMain">
+        <h2>OSU Women In CS</h2>
+        <p>
+          Wow what a great article here about some CS related OSU thingy neato neato
+        <h2>Elsewhere in CS</h2>
+        <div id="jsData">
+          <!-- jQuery sends content here-->
+
+      </div>
+      </div>
+
+      <!-- Secondary body of text, less in width because logo is on right too, trying to keep visual weight -->
+      <div class="rightMain">
+        <h2>Header Two</h2>
+        <p>
+          Stuff goes here too!
+          yay! I'm typing stuff..
+                    Stuff goes here too!
+          yay! I'm typing stuff..
+                    Stuff goes here too!
+          yay! I'm typing stuff..
+
+          <!-- Images not needed, but would be ideal for these small "highlight" columns. Example pic -->
+          <img width="70%" src="http://i60.tinypic.com/293hgeo.jpg">
+          And maybe some images and pretty things highlighting who we are and what we do...
+        </p>
+  
+        <!-- "More Information" dropdown/slideup. Used for longer articles than side boxes can show, links, etc -->
+        <div class="flip">Read More...</div>
+        <div class="panel">More stuff will go here as needed</div>
+      </div>
+
+      <!-- Third block of text for highlighting sujects -->
+      <div class="rightMainSecond">
+        <h2>Header Two</h2>
+        <p>
+          Stuff goes here too!
+          yay! I'm typing stuff..
+                    Stuff goes here too!
+          yay! I'm typing stuff..
+        </p>
+        <div class="flip2">Read More...</div>
+        <div class="panel2">More stuff will go here as needed</div>
+      </div>
+</body>
+</html>

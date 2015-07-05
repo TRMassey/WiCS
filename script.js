@@ -20,3 +20,25 @@ $(document).ready(function(){
         $('.panel2').slideUp('slow');		/* hide/less */
     });
 });
+
+/****************************************************
+*             Data Insertion - News
+*****************************************************/
+
+$(document).ready(function() {
+    $.getJSON('data.json', function(data) {
+        for (var i = 0; i < data.length; i++) {
+            var title;
+            var url;
+            var desc;
+
+            // grab the data
+            title = data[i].title;
+            url = data[i].url;
+            desc = data[i].desc;
+
+            $('#jsData').append('<p><b>Article:</b> <a href="' + url + '">' + title + '</a>');
+            $('#jsData').append('<br><b>Description:</b> ' + desc);
+        }
+    });
+});
