@@ -58,6 +58,14 @@ function findNews() {
 
 }
 
+function deleteFile() {
+	var file = 'data.json';
+
+	if (fs.exists(file)) {
+		fs.unlink(file);
+	}
+}
+
 
 function writeFile(article) {
 	var file = 'data.json';
@@ -73,4 +81,8 @@ function noComma(article) {
 
 }
 
+// because the above appends to an existing file, any current file needs to be deleted when script rerun
+deleteFile();
+
+// then create new file with new data
 findNews();
