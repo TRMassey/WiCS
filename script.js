@@ -28,7 +28,6 @@ $(document).ready(function(){
 $(document).ready(function() {
     $.getJSON('data.json', function(data) {
 
-
         for (var i = 0; i < data.length; i++) {
             var title;
             var url;
@@ -39,8 +38,8 @@ $(document).ready(function() {
             url = data[i].url;
             desc = data[i].desc;
 
-            $('#jsData').append('<br><b>Article:</b> <a href="' + url + '">' + title + '</a>');
-            $('#jsData').append('<br><b>Description:</b> ' + desc + '<br>');
+            $('#jsData').append('<br><a href="' + url + '">' + title + '</a>');
+            $('#jsData').append('<br>' + desc + '<br>');
         }
     });
 });

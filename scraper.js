@@ -2,12 +2,13 @@ var google = require('google');	// for data gathering
 var fs = require('fs');		// for writing file to be interpreted by vanilla JS elsewhere
 
 google.resultsPerPage = 10;
+google.timeSpan = 'm'; // information indexed in the past week 
 
 var nextCounter = 0;
 var data = [];
 
 function findNews() {
-	google('site:news.google.com women in tech', function (err, next, links) {
+	google('women in tech', function (err, next, links) {
 	if (err) {
 		console.log(err);
 	}
