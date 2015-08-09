@@ -18,7 +18,7 @@
     <div class="nav" align ="right">
       <h1>Oregon State University</h1>
         <ul id="menu">
-          <li><a href="main.php">Home Page</a></li>
+          <li><a href="WiCSMain.html">Home Page</a></li>
           <li><a href="about.php">About WiCS</a></li>
           <li><a href="resources.php" id="longer">Student Resources</a></li>
           <li><a href="career.php" id="longer">Career Resources</a></li>
