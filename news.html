@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">    
+    <meta charset="utf-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>In The News</title>
     <link rel="stylesheet" href="teststyle.css" />
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
@@ -9,11 +10,11 @@
     <script src="script.js"></script>
     <style>
       #jsData {
-        float: left;
         margin-left: 2%;
         margin-right: 2%;
         color: #804C00;
         font-family: 'Titillium Web', sans-serif;
+        padding-bottom: 3%;
       }
 
       #jsData a {
@@ -26,6 +27,26 @@
         text-decoration: underline;
         color: #804C00;
       }
+
+      #osuCS  {
+        margin-left: 2%;
+        margin-right: 2%;
+        color: #804C00;
+        font-family: 'Titillium Web', sans-serif;
+        padding-bottom: 1%;
+      }
+
+      #osuCS a {
+        color: #D68330;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      #osuCS a:hover {
+        text-decoration: underline;
+        color: #804C00;
+      }
+      }
     </style>
   </head>
   <body>
@@ -33,12 +54,15 @@
     <!-- Fixed Navigation Bar w/logo and nav keys -->
     <div class="nav" align ="right">
       <h1>Oregon State University</h1>
+      <label for="show-menu" class="show-menu">Show Menu</label>
+      <input type="checkbox" id="show-menu" role="button">
         <ul id="menu">
-          <li><a href="main.php">Home Page</a></li>
-          <li><a href="about.php">About WiCS</a></li>
-          <li><a href="resources.php" id="longer">Student Resources</a></li>
-          <li><a href="career.php" id="longer">Career Resources</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="about.html">About WiCS</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
 
     <!-- Fade from orange to pink behind main page picture, below nav bar -->
@@ -57,8 +81,10 @@
       <!-- Left "main body of text" column for us to write in for the section -->
       <div class="leftMain">
         <h2>OSU Women In CS</h2>
-        <p>
-          Wow what a great article here about some CS related OSU thingy neato neato
+        <div id="osuCS">
+        <br><a href="http://eecs.oregonstate.edu/feature-stories/exceeding-expectations">Exceeding Expectations</a>
+        <br>Transitioning from a band teacher to a software engineer seemed like a huge leap at first ...
+      </div>
         <h2>Elsewhere in CS</h2>
         <div id="jsData">
           <!-- jQuery sends content here-->

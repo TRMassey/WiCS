@@ -21,7 +21,8 @@
 
 /* fades to this color, for behind main body columns */
 html, body { 
-	height: 100%; width: 100%; margin: 0; 
+	height: 100%; 
+	width: 100%; 
 	background-color: #ffe4d0;
 	margin: 0;	/* close that gap between div and window margin*/
 }
@@ -72,6 +73,7 @@ hr {
   	margin-top: 0;
   	margin-bottom: 0;
   	margin-right: 5%;
+  	max-width: 100%;
 
 }
 
@@ -90,9 +92,9 @@ hr {
 .nav a, #join a {
 
 	/* shape the boxes */
-  	display: block;
+  	display: inline-block;
     text-align: center;
-    height: 50px;
+   	height: 50px;
     width: 140px;
     line-height: 50px;
     color: #804C00;
@@ -139,9 +141,93 @@ hr {
 	right: 0;
 	left: 0;
 	top: 0;
+	max-height: 25%;
+	min-width: 25%;
   	background-color: #FF8B33;
 }
 
+/**********************************************************
+*					Mobile Nav
+**********************************************************/
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #FF8B33;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+	border-bottom: 1px solid #ffe4d0;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+		margin-right: 0 !important;
+	}
+	/*Create vertical spacing*/
+	li {
+		border-top: 1px solid #ffe4d0;
+	}
+	li:last-child {
+		border-bottom: 1px solid #F5C8A6;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+		background-color: #FF8B33;
+	}
+
+	li a {
+		background-color: #FF8B33;
+		text-align: center;
+	    text-decoration: underline;
+	    text-shadow: 1px 1px 0px #283744;
+
+    	border-radius: 0;
+        padding: none !important;
+        background-image: none !important;
+        -webkit-box-shadow: none !important;
+    	-moz-box-shadow: none !important;
+   		box-shadow: none !important;
+   		border-radius: 0 !important;
+   		border: 0 !important;
+
+
+	}
+
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+
+	.header {
+		margin-top: 5%;
+	}
+
+	.leftMain {
+		width: 80% !important;
+		margin-right: 10%;
+	}
+
+	/*.rightMain, .rightMainSecond {
+		width: 10% !important;
+	}*/
+}
 
 /********************************************************
 *				Main body 
@@ -285,3 +371,4 @@ h2{
 h3, h4{
 	color: #804C00;
 }
+
