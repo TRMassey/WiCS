@@ -38,10 +38,15 @@ img {
 	border: 3px solid #804C00;
 }
 
+
+/* main body */
 .leftMain img {
 	float: left;
 	margin-right: 1%;
 }
+
+
+/* right column pics */
 .rightMain p img, .rightMainSecond p img {
 	margin-left: 20%;
 	border-radius: 100%;
@@ -146,6 +151,7 @@ hr {
   	background-color: #FF8B33;
 }
 
+
 /**********************************************************
 *					Mobile Nav
 **********************************************************/
@@ -229,6 +235,7 @@ input[type=checkbox]:checked ~ #menu{
 	}*/
 }
 
+
 /********************************************************
 *				Main body 
 ********************************************************/
@@ -256,9 +263,8 @@ input[type=checkbox]:checked ~ #menu{
 .rightMain {
 
 	/* basics */
-	float: right;
+	display: inline-block;
 	width: 20%;
-	height: 50%;
 	color: white;
 
 	/* give it some space */
@@ -279,9 +285,8 @@ input[type=checkbox]:checked ~ #menu{
 .rightMainSecond {
 
 	/* basics */
-	float: right;
+	display: inline-block;
 	width: 20%;
-	height: 50%;
 	color: white;
 
 	/* give it some space */
@@ -304,7 +309,7 @@ input[type=checkbox]:checked ~ #menu{
 *			Panel
 *******************************************************/
 .panel{
-	padding: 5px;
+	padding-top: 5px;
 	background-color: #FF8B33;
 	border: solid 1px #FF8B33;
 }
