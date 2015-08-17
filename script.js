@@ -85,3 +85,51 @@ $(window).on('resize', function() {
         jQuery('.rightMainSecond').hide();
     }
 });
+
+/*****************************************************************
+    *             Connect to YouTube
+    * Note: The YouTube Flash Player API and JavaScript Player API were
+    * deprecated on January 27, 2015. This uses <iframe>, which is
+    * compatible with modern browsers, but not IE 7.
+    *
+    * Citation: Google Developers, "Getting Started"
+    * https://developers.google.com/youtube/iframe_api_reference
+    ******************************************************************/
+      
+      /* loads the IFrame Player API */
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      /* create the payer at the specified location */
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'OWsyrnOBsJs',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      
+      /* function to play  video */
+      function onPlayerReady(event) {
+        event.target.pauseVideo();
+
+      }
+
+      /* checks state, and stops video when done */
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
