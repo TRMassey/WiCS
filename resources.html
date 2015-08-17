@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <title>Resources</title>
+    <link rel="stylesheet" href="teststyle.css" />
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+   <!-- Fixed Navigation Bar w/logo and nav keys -->
+    <div class="nav" align ="right">
+      <h1>Oregon State University</h1>
+      <label for="show-menu" class="show-menu">Show Menu</label>
+      <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+          <li><a href="WiCSMain.html">Home Page</a></li>
+          <li><a href="About.html">About WiCS</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.php">Contact</a></li>
+        </ul>
+      </div>
+
+
+    <!-- Fade from orange to pink behind main page picture, below nav bar -->
+    <div class="topHalf" align="left">
+      </br> <!-- on my computer, this fixes the overlap issues between moz/ie/chrome and the floating nav bar -->
+        
+      <!-- OMain pic -->
+      <div class="header" align="center">
+        <img alt="mainPic" width="90%" src="http://i58.tinypic.com/x4m01.png">
+          <!-- give some extra padding with some background that is the samem color gradient fades to -->
+          </br>
+      </div>
+        <hr>
+    </div>
+
+    <!-- Left "main body of text" column : About the group -->
+      <div class="leftMain">
+
+        <!-- computer science newbies -->
+        <h2>New to Computer Science? Not Sure if It's For You?</h2>
+
+           <!-- Play the Video-->
+          <div class="video">
+            <div id="player" width="100%" align="center"></div>
+          </div>
+        </br>
+
+        <!-- Supplemental Help -->
+        <h2>Need Supplemental Help with a Subject?</h2>
+          <p><b>Current student worried about understanding a subject?</b></p>
+          <ul>
+            <li>Oregon State Unversity offers tutoring in computer science subjects for their online students! Just because you can't make it into a classroom to ask for help, it's still there. </li>
+              <ul>
+                <li>Net tutoring: <a href="http://ecampus.oregonstate.edu/services/student-services/online-tutoring/">Click here to access</a></li>
+                <li>Peer tutoring: Once you get Piazza up and running for the term, make sure you join <a href="https://piazza.com/class/ib8vebi5n0i54x">the peer tutor group</a> to get access to help from students who have been there, done that, and aced it.</li>
+              </ul>
+            <li>Tip from the seniors: Create an online study group with Google Hangouts. The women in the group are in the same classes you are, and collaboration makes computer science fun and understandable</li>
+          </ul>
+
+          <!-- prior to class starting class -->
+          <p><b>Incoming or Prospective Student Wanting to Brush up on Math Prior to Classes Starting?</b></p>
+          <ul>
+            <li>Khan Academy : A free online program that numerous students have found beneficial for brushing up on their math skills! It will :
+              <ul>
+                <li> Give you a short test and then tailor the math to fill in what you don't know </li>
+                <li> Or, allow you to just learn the subjects you know you need help with </li>
+                <li> <a href="www.khanacademy.org">Click To Get Started</a></li>
+              </ul>
+          </ul>
+
+          <!-- prior to coming in, basics -->
+          <p><b>Wanting to try your hand at some basic programming, or brush up on the fundamentals of a certain language?</b></p>
+            <ul>
+              <li>Codecademy: A free online program that slowly steps you into a language of your choice. Starts at the bare basics, like what a variable is, and works into more complex topics. It does not cover C/C++.</li>
+              <ul>
+                <li><a href="codecademy.com">Click To Get Started</a></li>
+              </ul>
+          </ul>
+        </br>
+
+        <!-- Outside resources about CS -->
+        <h2>Curious or Anxious About Your Future Career?</h2>
+          <p><b>Get the numbers, get the facts. We're in demand: </b></p>
+          <ul>
+            <li><a href="http://www.bls.gov/oes/current/oes151131.htm">Computer Programmers</a> : BLS Occupational Employment and Wages, May 2014</li>
+            <li><a href="http://www.bls.gov/oes/current/oes151132.htm">Software Developers</a> : BLS Occupational Employment and Wages, May 2014</li>
+            <li><a href="http://www.bls.gov/oes/current/oes151134.htm">Web Developers</a> : BLS Occupational Employment and Wages, May 2014</li>
+          </ul>
+
+          <!-- Career Services -->
+          <p><b>Then talk to OSU's career resources to get started on the right track, including resume help, interview practice, and job/internship searches:</b></p>
+          <ul>
+            <li><a href="http://career.oregonstate.edu/students">Career Services</a> : Ecampus Career Services has Kyle Cassady working hard on our behalf. You can contact Kyle through email, or ycall Kyle at 541-737-5420</li>
+          </ul>
+
+          <!-- Career Fair -->
+          <p><b>Get a job and meet your fellow students at the OSU Computer Science Post-Bacc Career Fair. This is a career fair just for us, with employers who want us!</b></p>
+          <ul>
+            <li>See information <a href="http://eecs.oregonstate.edu/online-cs-students/future-students/career-showcase">here</a></li>
+          </ul>
+        </br>
+
+        <!-- Words of advice -->
+        <h2>Tips 'n' Tricks to Peek At!</h2>
+        <p><b>The IDE (integrated development environment) will vary depending on class and instructor suggestion. The following are popular choices from our members, and becoming familiar with one (or more) of them may be beneficial:</b></p>
+        <ul>
+          <li>Vim : OSU will get you up and running with this one. No download needed.</li>
+          <li><a href="http://www.codeblocks.org/">Code::Blocks</a> : A free C/C++ IDE</li>
+          <li><a href="https://eclipse.org/ide/">Eclipse</a> : An open source C/C++, Java, and PHP IDE</li>
+          <li><a href="https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx">Visual Studio</a> : From the TEACH homepage:
+            <ul>
+              <li>1. On the right side, click on Microsoft Dreamspark Login</li>
+              <li>2. Find Visual Studio for free, admist other amazing products because you're an OSU student</li>
+              <li>3. Click! </li>
+            </ul>
+          <li><a href="http://www.sublimetext.com/">Sublime</a> : Open Source and does it all.</a>
+        </ul>
+        </br>
+
+                
+    </div>
+
+      <!-- Secondary body of text : Member highlight with quotes and links -->
+      <div class="rightMain">
+        <h2>Women in Tech Organizations</h2>
+        <ul>
+          <li><a href="www.womenwhocode.com">Women Who Code</a> : Non-profit dedicated to women in technology</li></br>
+          <li><a href="www.girldevelopit.com">Girl Develop It</a> : Non-profit dedicated to providing affordable programs for women interested in programming </li></br>
+          <li><a href="www.girlswhocode.com">Girls Who Code:</a> : Non-profit dedicated to inspiring and equiping high school girls with the skills and resources to explore tech </li></br>
+          <li><a href="www.ncwit.org">National Center for Women and Information Technology</a> : Non-profit working to correct the imbalance of gender diversity in the technology industry</li></br>
+          <li><a href="anitaborg.org">Anita Borg Institute</a> : Non-profit centered on women in technology and increasing the representation of women in the technology sector </li></br>
+      </div>
+</body>
+</html>
