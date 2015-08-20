@@ -29,7 +29,16 @@ html, body {
 }
 
 
+/*******************************************************
+*			Anchors to account for fixed nav bar
+********************************************************/
 
+.anchor {
+	 display:block;
+   height:90px; /* this is the height of your header */
+   margin-top:-90px; /* this is again negative value of the height of your header */
+   visibility:hidden;
+}
 
 /*****************************************************************
 *					Images
@@ -380,6 +389,7 @@ h3, h4{
 
 <<<<<<< HEAD
 =======
+
 
 
 /*******************************************************
